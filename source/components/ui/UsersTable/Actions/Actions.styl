@@ -1,0 +1,35 @@
+@import "../../../../theme/theme.styl"
+
+.container
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items center
+  justify-content center
+
+.button
+  outline: none
+  height: 20px
+  border: none
+  font-size: 14px
+  line-height: 20px
+  width: 60px
+  text-align: center
+  padding: 0
+  margin: 0
+  background-color: $primary-color
+  color: white
+  border-radius: 5px
+  cursor: pointer
+  will-change background-color
+  transition background-color 0.2s ease-in-out
+
+.button:hover
+  background-color darken($primary-color, 20%)
+
+.delete
+  margin-left: 10px
+  background-color $danger-color
+
+.delete:hover
+  background-color darken($danger-color, 20%)

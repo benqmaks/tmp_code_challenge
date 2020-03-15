@@ -1,0 +1,40 @@
+{
+  "name": "code_challenge",
+  "version": "1.0.0",
+  "description": "Code challenge",
+  "main": "index.js",
+  "author": "Maks Okhmatenko",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "mobx": "^5.9.4",
+    "mobx-react": "^5.4.4",
+    "next": "^8.1.0",
+    "next-mobx-wrapper": "^0.3.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-table-v6": "^6.8.6",
+    "react-tabs": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-stylus": "^1.0.1",
+    "cross-env": "^5.2.0",
+    "next-compose-plugins": "^2.2.0",
+    "next-size": "^2.0.2",
+    "prop-types": "^15.7.2",
+    "stylus": "^0.54.5",
+    "webpack": "^4.32.1",
+    "webpack-bundle-analyzer": "^3.3.2"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node server.js",
+    "build": "next build",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "analyze": "cross-env ANALYZE=1 next build"
+  }
+}

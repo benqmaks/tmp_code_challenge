@@ -1,0 +1,65 @@
+@import '../../../theme/theme.styl';
+
+.button
+  position: relative
+  display: inline-block
+  margin: 0
+
+  background-color: $primary-color
+  font-family: 'Arial', sans-serif
+
+  min-height: 28px
+  min-width: 140px
+
+  line-height: 26px
+  font-size: 14px
+  padding: 0 10px
+
+  color: white
+  cursor: pointer
+  box-sizing: border-box
+  text-decoration: none
+  border: 1px solid transparent
+  border-radius: 14px
+  transition: background-color 0.2s ease-in-out
+  outline: none
+  user-select: none
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+.button:hover:not(:disabled)
+  background-color: darken($primary-color, 20%)
+
+.button:disabled
+  cursor: not-allowed
+  background-color: lighten($secondary-color, 20%)
+
+.primary
+  composes: button
+  background-color: $primary-color
+
+.secondary
+  composes: button
+  background-color: $secondary-color
+
+.danger
+  composes: button
+  background-color $danger-color
+
+.ghost
+  composes: button
+  background-color: transparent
+  border: 1px solid $primary-color
+  color: $primary-color
+
+.loader
+  position: absolute
+  left: 50%
+  top: 50%
+
+  // because of size of the 'small' loader
+  // we need to setup such negative margins
+  margin-left: -12.5px
+  margin-top: -12.5px
+

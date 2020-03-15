@@ -1,0 +1,35 @@
+.textField
+  position: relative
+  width: 100%
+
+.textField.disabled
+  opacity: 0.6
+  .input
+    background-color: lightgrey
+
+.input
+  width: 100%
+  padding: 0 5px
+  margin: 0
+  height: 30px
+  line-height: 30px
+  border-width: 1px
+  border-style: solid
+  border-color: $grey-d
+  border-radius: 3px
+  font-size: 14px
+  box-sizing: border-box
+  transition: border 0.2s ease-in-out
+
+  &.error
+  &:active.error
+  &:focus.error
+    padding-right: 26px
+    border-color: darkred !important
+
+.input:focus
+  border-color: darkblue !important
+  outline: none !important
+
+.input:hover
+  border-color: darken(lightgrey, 20%)
