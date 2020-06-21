@@ -5,7 +5,7 @@ class UsersAPI {
     let usersArr = [];
     const users = localStorage.getItem(USERS_KEY);
 
-    if (!users.length) {
+    if (!users) {
       return usersArr;
     }
 
